@@ -10,8 +10,8 @@ spec:
   behavior:
     scaleDown:
         stabilizationWindowSeconds: 180
-  minReplicas: 2 # Definimos 2, para tener buena disponibilidad y a los pods le colocamos los recursos necesarios para atender el horario valle
-  maxReplicas: 4 # Máximo el doble, en tanto la demanda no crezca mas se prioriza contener el costo
+  minReplicas: 1 # Definimos 2, para tener buena disponibilidad y a los pods le colocamos los recursos necesarios para atender el horario valle
+  maxReplicas: 2 # Máximo el doble, en tanto la demanda no crezca mas se prioriza contener el costo
   metrics:
   - type: Resource
     resource:
