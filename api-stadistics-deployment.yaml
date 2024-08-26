@@ -15,7 +15,7 @@ spec:
         app: api-stadistics
     spec:
       containers:
-        - image: "darnack/apistadistics:2552add343202467512bfaee46da6936815271b2"
+        - image: "darnack/apistadistics:3dea008ea0d294ddb009b131892c890e198ce2f1"
           name: api-stadistics
           env:
             - name: ASPNETCORE_ENVIRONMENT
