@@ -14,6 +14,7 @@ spec:
       labels:
         app: api-stadistics
     spec:
+      revisionHistoryLimit: 0 # Default to 10 if not specified
       containers:
         - image: "darnack/apistadistics:latest"
           name: api-stadistics
