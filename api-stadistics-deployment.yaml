@@ -5,6 +5,7 @@ metadata:
   labels:
     app: api-stadistics
 spec:
+  revisionHistoryLimit: 1
   replicas: 1
   selector:
     matchLabels:
@@ -13,8 +14,7 @@ spec:
     metadata:
       labels:
         app: api-stadistics
-    spec:
-      revisionHistoryLimit: 0 # Default to 10 if not specified
+    spec:      
       containers:
         - image: "darnack/apistadistics:3dea008ea0d294ddb009b131892c890e198ce2f1"
           name: api-stadistics
