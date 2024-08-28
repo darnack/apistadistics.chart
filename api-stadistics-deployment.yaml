@@ -16,15 +16,15 @@ spec:
     spec:
       revisionHistoryLimit: 0 # Default to 10 if not specified
       containers:
-        - image: "darnack/apistadistics:latest"
+        - image: "darnack/apistadistics:3dea008ea0d294ddb009b131892c890e198ce2f1"
           name: api-stadistics
           env:
             - name: ASPNETCORE_ENVIRONMENT
               value: "Production"
             - name: ASPNETCORE_HTTP_PORTS
               value: "8080"
-            #- name: ASPNETCORE_HTTPS_PORTS
-            #  value: "8081"
+              #- name: ASPNETCORE_HTTPS_PORTS
+              #  value: "8081"
           ports:
             - containerPort: 8080
           resources:
